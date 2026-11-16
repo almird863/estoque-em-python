@@ -9,9 +9,9 @@ cursor = connect.cursor()
 
 def criar_tabela():
     cursor.execute('''CREATE TABLE IF NOT EXISTS Estoque (
-                        id INTERGER PRIMARY KEY,
+                        id INTEGER PRIMARY KEY AUTOINCREMENT,
                         nome TEXT NOT NULL,
-                        quantidade INTERGER NOT NULL
+                        quantidade INTEGER NOT NULL
                         )''')
     connect.commit()
 
