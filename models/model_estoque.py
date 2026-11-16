@@ -55,7 +55,7 @@ def buscar_item_por_nome(nome):
     try:
         cursor.execute("SELECT * FROM Estoque WHERE nome = ?", (nome,))
 
-        return True, cursor.fetchall()
+        return True, cursor.fetchone()
 
     except sqlite3.Error as e:
         print(e)
