@@ -142,7 +142,7 @@ class JanelaPrincipal(ctk.CTk):
 
         self._rotulo(aba, "Nome do produto").grid(
             row=0, column=0, sticky="w", padx=14, pady=(20, 4))
-        self.ent_cad_nome = self._campo(aba, "Ex.: Teclado USB")
+        self.ent_cad_nome = self._campo(aba, "Nome do produto")
         self.ent_cad_nome.grid(row=1, column=0, sticky="ew", padx=14)
 
         self._rotulo(aba, "Quantidade inicial").grid(
