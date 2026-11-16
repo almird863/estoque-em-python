@@ -80,11 +80,11 @@ def subtrair_qnt_produto(nome, qnt):
     
     item_id, item_nome, item_qnt = dados[:3]
 
-    item_qnt -= quantidade
-
     if quantidade >= item_qnt:
         return False, f"Estoque insuficiente: (Disponível: {item_qnt})"
 
+    item_qnt -= quantidade
+    
     return atualizar_quantidade(item_qnt, item_id)
 
 
