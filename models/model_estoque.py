@@ -21,7 +21,17 @@ def criar_tabela():
 #####################################################################
 
 
-def 
+def inserir_item(nome, qnt):
+    try:
+        cursor.execute('''INSERT INTO Estoque (nome, quantidade)
+                            VALUES (?, ?)''', (nome, qnt))
+        connect.commit()
+
+        return True, "Item inserido com sucesso."
+
+    except sqlite3.Error as e:
+
+        return False, f"Erro ao inserir item: {e}"
 
 
 #####################################################################
