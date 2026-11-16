@@ -147,7 +147,7 @@ class JanelaPrincipal(ctk.CTk):
 
         self._rotulo(aba, "Quantidade inicial").grid(
             row=2, column=0, sticky="w", padx=14, pady=(18, 4))
-        self.ent_cad_qtd = self._campo(aba, "Ex.: 10")
+        self.ent_cad_qtd = self._campo(aba, "Quantidade inicial")
         self.ent_cad_qtd.grid(row=3, column=0, sticky="ew", padx=14)
 
         self._botao(aba, "Cadastrar produto", self.cadastrar).grid(
