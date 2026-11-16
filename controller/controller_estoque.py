@@ -1,8 +1,5 @@
-from models.model_estoque import (listar_items,
-                                  buscar_item_por_nome,
+from models.model_estoque import (buscar_item_por_nome,
                                   atualizar_quantidade,
-                                  buscar_item_por_quantidade_maior_que,
-                                  buscar_item_por_quantidade_menor_que,
                                   excluir_item,
                                   inserir_item)
 
